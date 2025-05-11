@@ -17,5 +17,4 @@ class $modify(MyInfoLayer, InfoLayer) {
             )->show();
         };
 		return true;
-	}
 };
