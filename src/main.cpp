@@ -1,8 +1,8 @@
 #include <Geode/Geode.hpp>
+#include <Geode/modify/InfoLayer.hpp>
 
 using namespace geode::prelude;
 
-#include <Geode/modify/InfoLayer.hpp>
 class $modify(MyInfoLayer, InfoLayer) {
         void onCopyLevelID(CCObject * sender) {
             Notification::create("Level ID copied to clipboard", NotificationIcon::Success)->show();
