@@ -10,10 +10,7 @@ class $modify(MyInfoLayer, InfoLayer) {
             std::string idStr = std::to_string(m_level->m_levelID.value());
 
             auto written = clipboard::write(idStr);
-            FLAlertLayer::create(
-                "Copy id",
-                "Level ID Copied to clipboard",
-                "OK"
-            )->show();
+
+            Notification::create("Level ID copied to clipboard", NotificationIcon::Success)->show();
         }
 };
