@@ -15,6 +15,6 @@ class $modify(MyInfoLayer, InfoLayer) {
                 "Level ID Copied to clipboard",
                 "OK"
             )->show();
-        };
+        }
 		return true;
 };
