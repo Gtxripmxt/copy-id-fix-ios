@@ -4,10 +4,6 @@ using namespace geode::prelude;
 
 #include <Geode/modify/InfoLayer.hpp>
 class $modify(MyInfoLayer, InfoLayer) {
-	bool init() {
-		if (!InfoLayer::init()) {
-			return false;
-		}
         void onCopyLevelID(CCObject * sender) {
             if (!m_level) return;
 
